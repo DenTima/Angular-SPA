@@ -1,0 +1,25 @@
+<mat-toolbar>
+  <span>{{title}}</span>
+  <span class="example-spacer">
+
+      <nav class="header-nav">
+        <a
+          mat-button
+          routerLink="employees"
+          routerLinkActive="active">Employees</a>
+        <a
+          mat-button
+          routerLink="add"
+          routerLinkActive="active">Add Employees</a>
+        <a
+          mat-button
+          routerLink="findbyname"
+          routerLinkActive="active">Search</a>
+      </nav>
+  </span>
+
+</mat-toolbar>
+
+<div class="content-page">
+    <router-outlet></router-outlet>
+</div>
